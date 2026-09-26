@@ -342,6 +342,20 @@ This demonstrated an important RAG product principle:
 
 ---
 
+## Setup Steps
+
+1. Create a Dify Chatflow application.
+2. Create a knowledge base using the approved mutual fund source documents.
+3. Configure document chunking and retrieval.
+4. Connect the Knowledge Retrieval node to the user query.
+5. Connect Google Gemini as the LLM provider using Google AI Studio.
+6. Pass the retrieved context to the LLM.
+7. Add the facts-only system prompt and refusal guardrails.
+8. Connect the LLM output to the Answer node.
+9. Test factual, refusal, PII, unsupported, and out-of-scope queries.
+10. Publish the Dify web application.
+
+    
 ## Known Limitations
 
 - The prototype supports only three HDFC Mutual Fund schemes.
